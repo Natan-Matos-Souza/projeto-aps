@@ -14,9 +14,8 @@ menuBtn.addEventListener('click', function() {
 
 
 setInterval(() => {
-    console.log(window.innerWidth)
+
     if (window.innerWidth > 995) {
         list.style.display = "block"
-        console.log('funcionando')
     }
 }, 100)
