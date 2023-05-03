@@ -7,6 +7,7 @@
 
 body {
     font-family: sans-serif;
+    transition: 500ms;
 }
 
 /*header*/
@@ -96,8 +97,8 @@ body {
 
     #list li a {
         display: block;
-        background-color: #ccc;
-        opacity: 70%;
+        background-color: #3C6255;
+        opacity: 100%;
     }
 
     #dark-mode-icon {
