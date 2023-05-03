@@ -111,3 +111,23 @@ body {
         right: 20px;
     }
 }
+
+@keyframes dropdownEffect {
+    from {
+        left: -100%;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes dropInEffect {
+    from {
+        top: 100%
+    }
+
+    to {
+        left: -100%;
+    }
+}
