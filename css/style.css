@@ -5,7 +5,14 @@
     box-sizing: border-box;
 }
 
-body {
+.light-body {
+    background-color: #fff;
+    font-family: sans-serif;
+    transition: 500ms;  
+}
+
+.dark-body {
+    background-color: #525252;
     font-family: sans-serif;
     transition: 500ms;
 }
