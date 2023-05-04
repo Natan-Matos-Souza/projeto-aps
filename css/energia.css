@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Energia Sustentável */
+
+.WholeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.WholeWrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #000000;
+}
+.TitleSustentavel {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #3c6255;
+}
+.PSustentavel {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #61876e;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 7rem;
+}
+
+/* Energia Eólica */
+
+.ContainerEolica {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.WrapperEolica {
+  width: 80%;
+  display: flex;
+  padding-bottom: 5rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+.TextosEolica {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.divH1Eolica {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+.h1Eolica {
+  color: #3c6255;
+  font-size: 3rem;
+}
+.PEolica {
+  color: #61876e;
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.DivImgEolica {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgEolica {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Energia Fotovoltáica*/
+
+.WrapperFotovoltaica {
+  width: 80%;
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.divH1Fotovoltaica {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 800px) {
+  .TitleSustentavel,
+  .h1Eolica {
+    font-size: 2.2rem;
+  }
+  .PSustentavel,
+  .PEolica {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .WholeWrapper {
+    width: 85%;
+  }
+
+  /* Responsividade Eolica*/
+
+  .WrapperEolica {
+    flex-direction: column;
+    width: 85%;
+  }
+  .TextosEolica {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .DivImgEolica {
+    width: 60%;
+  }
+
+  /* Wrapper Fotovoltaica*/
+
+  .WrapperFotovoltaica {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .TitleSustentavel,
+  .h1Eolica {
+    font-size: 1.7rem;
+  }
+  .PSustentavel,
+  .PEolica {
+    font-size: 0.8rem;
+  }
+}
