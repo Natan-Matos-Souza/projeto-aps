@@ -5,12 +5,18 @@
     --primary-color: #fff;
     --secondary-color: #61876E;
     --tertiary-color: #000;
+    --title-color: #3c6255;
+    --paragraph-color: #61876E;
+    --horizontal-row: #000;
 }
 
 .dark-mode:root {
     --primary-color: #525252;
     --secondary-color: #61876E;
-    --tertiary-color: #000
+    --tertiary-color: #000;
+    --title-color: #fff;
+    --paragraph-color: #fff;
+    --horizontal-row: #fff;
 }
 
 /*Carousel*/
@@ -72,4 +78,87 @@ body {
 
 .carousel-indicators .active {
     background-color: #61876E; 
+}
+
+.susContainer{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.susWrapper{
+    width:80%;
+    margin-top:5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--horizontal-row);
+    padding-bottom: 3rem;
+    
+}
+
+.susDivText{
+    width:55%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.susTitle{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    color: var(--title-color);
+}
+
+.susText{
+    font-size: 1.3rem;
+    text-justify: inter-word;
+    text-align: justify;
+    color: var(--paragraph-color);
+}
+
+.susDivImg{
+    width:35%;
+    height: 100%;
+}
+
+.susImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: auto;
+}
+
+@media screen and (max-width:770px) {
+    .susWrapper{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .susDivText{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+        margin-bottom: 1.5rem;
+    }
+    .susDivImg{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+    } 
+
+    .susText{
+        font-size: 1rem;
+    }
+    .susTitle{
+        font-size: 2rem;
+    }
+
 }
