@@ -14,7 +14,7 @@
     --primary-color: #525252;
     --secondary-color: #61876E;
     --tertiary-color: #000;
-    --title-color: #fff;
+    --title-color: #ACFEC8;
     --paragraph-color: #fff;
     --horizontal-row: #fff;
 }
@@ -110,7 +110,7 @@ body {
 .susTitle{
     margin-bottom: 2.5rem;
     font-size: 2.5rem;
-    color: var(--title-color);
+    color: var(--title-color) !important;
 }
 
 .susText{
