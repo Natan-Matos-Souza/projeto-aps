@@ -1,0 +1,56 @@
+
+/*Carousel*/
+
+.container-fluid {
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+   }
+
+#mainslider .carousel-inner, .carousel-item {
+    width: 1rem, 8rem;
+    height: 85vh;
+    transition: .5s;
+}
+
+.carousel-caption {
+    top: 30%;
+}
+
+.carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption p {
+    font-size: 22px;
+    margin-bottom: 100px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.main-btn {
+    padding: 1.1em 2em;
+    background-color: none;
+    border: 2 px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    border-radius: 12px;
+    background-color: #61876E;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #131313;
+    
+}
+
+.main-btn:hover {
+    background-color: #61876E;
+    color: #ACFEC8;
+    box-shadow: 0 2px 0 2px #131313;
+}
+
+.carousel-indicators .active {
+    background-color: #61876E; 
+}
