@@ -1,26 +1,25 @@
-const bodyElement = document.getElementById('body')
-    
+const htmlElement = document.querySelector('html')
+const darkModeBtn = document.getElementById('dark-mode-icon')
+
 if (localStorage.getItem('theme') == "dark") {
-    bodyElement.setAttribute('class', "dark-body")
+    htmlElement.setAttribute('class', 'dark-mode')
 }
 
 if (localStorage.getItem('theme') == "default") {
-    bodyElement.setAttribute('class', "light-body")
+    htmlElement.setAttribute('class', 'light-mode')
 }
 
-if (localStorage.getItem('theme') == null || localStorage.getItem('theme') == "") {
-    bodyElement.setAttribute('class', "light-body")
-    localStorage.setItem('theme', 'default' )
+if (localStorage.getItem('theme') == "" || localStorage.getItem('theme') == null) {
+    htmlElement.setAttribute('class', 'light-mode')
+    localStorage.setItem('theme', 'default')
 }
 
-const darkModeBtn = document.getElementById('dark-mode-icon')
-
-darkModeBtn.addEventListener('click', function() {
-    if (localStorage.getItem('theme') == "default") {
-        bodyElement.setAttribute('class', "dark-body")
-        localStorage.setItem('theme', "dark")
+darkModeBtn.addEventListener('click', () => {
+    if (htmlElement.getAttribute('class') == "light-mode") {
+        htmlElement.setAttribute('class', 'dark-mode')
+        localStorage.setItem('theme', 'dark')
     } else {
-        bodyElement.setAttribute('class', "light-body")
-        localStorage.setItem('theme', "default")
+        htmlElement.setAttribute('class', 'light-mode')
+        localStorage.setItem('theme', 'default')
     }
 })

@@ -1,5 +1,24 @@
 
+/*Dark-mode*/
+
+.light-mode:root {
+    --primary-color: #fff;
+    --secondary-color: #61876E;
+    --tertiary-color: #000;
+}
+
+.dark-mode:root {
+    --primary-color: #525252;
+    --secondary-color: #61876E;
+    --tertiary-color: #000
+}
+
 /*Carousel*/
+
+body {
+    transition: 500ms;
+    background-color: var(--primary-color);
+}
 
 .container-fluid {
     margin-top: 0px;
