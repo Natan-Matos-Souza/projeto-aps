@@ -38,6 +38,7 @@ article {
 }
 
 #main-paragraph {
+    line-height: 1.5;
     font-size: 18px;
     font-weight: 300;
     color: var(--paragraph-color);
@@ -169,6 +170,7 @@ article {
 
 .card-paragraph-right {
     display: flex;
+    flex: row-reverse;
     
 }
 
@@ -216,5 +218,83 @@ article {
     }
     100% {
         bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .left-card {
+        width: 90%;
+        margin: 120px auto 0px;
+    }
+
+    .title-area-left {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card-title-left {
+        font-size: 24px;
+    }
+
+    .card-paragraph-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-paragraph-left-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .left-card-img {
+        margin: 40px auto 0px;
+        height: 100px;
+    }
+
+    .modal-btn {
+        margin: 40px auto 0px;
+        text-align: center;
+        position: static;
+    }
+
+    /*right*/
+
+    .right-card {
+        width: 90%;
+        margin: 120px auto 0px;
+    }
+
+    .title-area-right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card-title-right {
+        font-size: 24px;
+    }
+
+    .card-paragraph-right {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card-paragraph-right-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .left-card-img {
+        margin: 40px auto 0px;
+        height: 100px;
+    }
+
+    .modal-btn-right {
+        margin: 40px auto 0px;
+        text-align: center;
+        position: static;
     }
 }
