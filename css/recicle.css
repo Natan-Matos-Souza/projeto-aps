@@ -65,7 +65,7 @@ article {
     height: 300px;
     position: relative;
     bottom: 0px;
-    animation: earthAnimation 1s infinite;
+    animation: earthAnimation 4s infinite;
 }
 
 #main-horizontal-row {
