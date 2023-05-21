@@ -1,0 +1,220 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.light-mode:root {
+    --background-color: #fff;
+    --title-color: #3C6255;
+    --paragraph-color: #000;
+    --horizontal-row: #000;
+}
+
+.dark-mode:root {
+    --background-color: #525252;
+    --title-color: #fff;
+    --paragraph-color: #fff;
+    --horizontal-row: #fff;
+}
+
+body {
+    transition: 500ms;
+    background-color: var(--background-color) !important;
+}
+
+article {
+    margin: 120px auto 0px;
+    width: 100%;
+}
+
+#main-text {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    font-weight: 500;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#main-paragraph {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--paragraph-color);
+    width: 60%;
+    text-align: center;
+    margin: 40px auto 0px;
+}
+
+#earth-text {
+    color: var(--title-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 80px auto 0px;
+    width: 80%;
+    font-size: 32px;
+    text-align: center;
+}
+
+#image-earth-area {
+    width: 100%;
+    margin: 80px auto 0px;
+    text-align: center;
+}
+
+#earth-image {
+    height: 300px;
+    position: relative;
+    bottom: 0px;
+    animation: earthAnimation 1s infinite;
+}
+
+#main-horizontal-row {
+    width: 60%;
+    margin: 40px auto 0px;
+    padding: 1px;
+    border-top: 1px solid var(--horizontal-row);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+#card-section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#card-section-text {
+    margin: 80px auto 0px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+}
+
+.left-card {
+    position: relative;
+    width: 40%;
+    margin: 80px auto 0px;
+}
+
+.title-area-left {
+    width: 50%;
+    margin: 0px 0px 32px 0px;
+    text-align: left;
+}
+
+.card-title-left {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    font-size: 32px;
+}
+
+.card-paragraph-left {
+    display: flex;
+    
+}
+
+.card-paragraph-left-text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--paragraph-color);
+    text-align: left;
+    font-size: 18px;
+}
+
+.left-card-img {
+    height: 200px;
+}
+
+.modal-btn {
+    position: absolute;
+    bottom: 40px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.about-btn:hover {
+    opacity: 0.7;
+}
+
+.about-btn {
+    background-color: #ACFEC8;
+    display: inline;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+/*right*/
+
+
+.right-card {
+    position: relative;
+    width: 40%;
+    margin: 120px auto 120px;
+    text-align: right;
+}
+
+.title-area-right {
+    width: 50%;
+    margin: 0px 0px 32px 50%;
+    text-align: right;
+}
+
+.card-title-right {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    font-size: 32px;
+}
+
+.card-paragraph-right {
+    display: flex;
+    
+}
+
+
+.card-paragraph-right-text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--paragraph-color);
+    text-align: right;
+    font-size: 18px;
+}
+
+.right-card-img {
+    height: 200px;
+    transform: rotate(-45deg);
+}
+
+.modal-btn-right {
+    position: absolute;
+    bottom: 40px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: right;
+}
+
+.about-btn:hover {
+    opacity: 0.7;
+}
+
+.about-btn {
+    background-color: #ACFEC8;
+    display: inline;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+@keyframes earthAnimation {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 30px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
