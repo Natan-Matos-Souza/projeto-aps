@@ -1,11 +1,15 @@
+const modalDiv = document.getElementById('modal')
 const reuseBtn = document.getElementById('reuse-btn')
-const reuseDiv = document.getElementById('reuse-div')
-const closeReuseDivBtn = document.getElementById('close-reuse-div-btn')
+const closeModalBtn = document.getElementById('close-modal')
+
 
 reuseBtn.addEventListener('click', () => {
-    reuseDiv.style.display = "block"
+
+    modalDiv.style.display = "block"
+
 })
 
-closeReuseDivBtn.addEventListener('click', () => {
-    reuseDiv.style.display = "none"
+closeModalBtn.addEventListener('click', () => {
+
+    modalDiv.style.display = "none"
 })
