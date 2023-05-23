@@ -5,11 +5,14 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .light-mode:root {
     --background-color: #fff;
     --title-color: #3C6255;
     --paragraph-color: #000;
     --horizontal-row: #000;
+    --scrollbar: #3C6255;
 }
 
 .dark-mode:root {
@@ -17,11 +20,21 @@ html {
     --title-color: #ACFEC8;
     --paragraph-color: #fff;
     --horizontal-row: #fff;
+    --scrollbar: #ACFEC8;
 }
 
 body {
     transition: 500ms;
     background-color: var(--background-color) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 360px;
 }
 
 article {
@@ -260,6 +273,7 @@ article {
     display: inline;
     width: 200px;
     height: 50px;
+    border-radius: 4px;
     border: none;
 }
 
@@ -315,8 +329,25 @@ footer {
 
     .modal-div {
         width: 100%;
-        height: 80%;
+        height: 90%;
         background-size: 200px;
+        overflow: scroll;
+        background-image: none;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        margin: 20px auto 0px;
+    }
+
+    .modal-paragraph {
+        margin: 0px auto 0px;
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .close-modal-btn {
+        margin: 20px auto 0px;
     }
 
     .left-card {

@@ -30,6 +30,6 @@ function closeModal() {
 
 closeModalBtn[0].addEventListener('click', closeModal)
 closeModalBtn[1].addEventListener('click', closeModal)
-closeModalBtn[3].addEventListener('click'. closeModal)
+closeModalBtn[2].addEventListener('click', closeModal)
 
 console.log(closeModalBtn.length)
