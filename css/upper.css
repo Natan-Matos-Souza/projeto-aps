@@ -23,3 +23,14 @@
     text-align: center;
     height: 80px;
 }
+
+@media screen and (max-width: 1200px) {
+    #upper {
+        width: 60px;
+        height: 60px;
+    }
+
+    #arrow-up {
+        height: 60px;
+    }
+}
