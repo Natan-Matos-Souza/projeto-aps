@@ -1,5 +1,3 @@
-@import url(../css/scrollbar.css);
-@import url(../css/upper.css);
 
 /*Dark-mode*/
 
@@ -10,7 +8,6 @@
     --title-color: #3c6255;
     --paragraph-color: #61876E;
     --horizontal-row: #000;
-    --scrollbar: #ACFEC8;
 }
 
 .dark-mode:root {
@@ -20,7 +17,6 @@
     --title-color: #ACFEC8;
     --paragraph-color: #fff;
     --horizontal-row: #fff;
-    --scrollbar: #ACFEC8
 }
 
 /*Carousel*/
@@ -84,18 +80,19 @@ body {
     background-color: #61876E; 
 }
 
+/* Conteudo*/
+
 .susContainer{
     width:100%;
     height:100%;
     display:flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .susWrapper{
     width:80%;
-    margin-top:5rem;
+    margin-top:4rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -104,11 +101,30 @@ body {
     
 }
 
+.Sus-Row{
+    width:80%;
+    margin-top:3rem;
+    margin-bottom: 2rem;
+    display: flexbox;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--horizontal-row);
+    padding-bottom: 3rem;   
+}
+
 .susDivText{
     width:55%;
     display:flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.susDivText2{
+    width:82%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 6rem;
 }
 
 .susTitle{
@@ -125,8 +141,14 @@ body {
 }
 
 .susDivImg{
-    width:35%;
+    width:37%;
     height: 100%;
+}
+
+.susDivImg2{
+    width:90%;
+    height: 100%;
+    margin-left: 4rem;
 }
 
 .susImg{
