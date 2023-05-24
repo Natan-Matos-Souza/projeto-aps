@@ -1,0 +1,25 @@
+#upper:hover {
+    opacity: 0.4;
+}
+
+#upper {
+    z-index: 10;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 80px;
+    width: 80px;
+    background-color: #ACFEC8;
+    border-radius: 360px;
+}
+
+#arrow-up-area {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#arrow-up {
+    text-align: center;
+    height: 80px;
+}

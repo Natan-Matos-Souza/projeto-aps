@@ -1,12 +1,11 @@
 @import url(../css/footer.css);
 @import url(../css/scrollbar.css);
+@import url(../css/upper.css);
 
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
-
-
 
 .light-mode:root {
     --background-color: #fff;
