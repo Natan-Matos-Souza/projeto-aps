@@ -20,6 +20,10 @@
     top: 15%;
 }
 
+#logo-link:hover {
+    opacity: 0.4;
+}
+
 #logo {
     height: 60px;
 }
