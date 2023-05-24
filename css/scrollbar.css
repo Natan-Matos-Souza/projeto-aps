@@ -1,0 +1,15 @@
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    transition: 1s;
+    background-color: var(--scrollbar);
+    opacity: 0.4;
+    border-radius: 360px;
+}

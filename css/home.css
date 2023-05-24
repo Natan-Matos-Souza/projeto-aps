@@ -1,3 +1,4 @@
+@import url(../css/scrollbar.css);
 
 /*Dark-mode*/
 
@@ -8,6 +9,7 @@
     --title-color: #3c6255;
     --paragraph-color: #61876E;
     --horizontal-row: #000;
+    --scrollbar: #ACFEC8;
 }
 
 .dark-mode:root {
@@ -17,6 +19,7 @@
     --title-color: #ACFEC8;
     --paragraph-color: #fff;
     --horizontal-row: #fff;
+    --scrollbar: #ACFEC8
 }
 
 /*Carousel*/

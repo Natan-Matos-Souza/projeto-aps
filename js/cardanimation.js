@@ -40,3 +40,11 @@ secondLeftCardDiv.addEventListener('mouseout', () => {
     stopAnimation(secondLeftCardImg)
 })
 
+firstLeftCardImg.style.animation = 'none'
+firstRightCardImg.style.animation = 'none'
+secondLeftCardImg.style.animation = 'none'
+
+
+firstLeftCardImg.style.transition = '1s'
+firstRightCardImg.style.transition = '1s'
+secondLeftCardImg.style.transition = '1s'
