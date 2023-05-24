@@ -5,11 +5,13 @@ const closeModalBtn = document.getElementsByClassName('close-modal-btn')
 
 const reuseBtn = document.getElementById('reuse-btn')
 const recicleBtn = document.getElementById('recicle-btn')
+const rethinkBtn = document.getElementById('rethink-btn')
 
 //Importing divs
 
 const recicleDiv = document.getElementById('recicle-div')
 const reuseDiv = document.getElementById('reuse-div')
+const rethinkDiv = document.getElementById('rethink-div')
 
 
 reuseBtn.addEventListener('click', () => {
@@ -22,10 +24,16 @@ recicleBtn.addEventListener('click', () => {
     recicleDiv.style.display = 'block'
 })
 
+rethinkBtn.addEventListener('click', () => {
+    modalDiv.style.display = 'block'
+    rethinkDiv.style.display = 'block'
+})
+
 function closeModal() {
     modalDiv.style.display = 'none'
     recicleDiv.style.display = 'none'
     reuseDiv.style.display = 'none'
+    rethinkDiv.style.display = 'none'
 }
 
 closeModalBtn[0].addEventListener('click', closeModal)

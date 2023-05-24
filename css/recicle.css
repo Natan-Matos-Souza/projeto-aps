@@ -12,7 +12,7 @@ html {
     --title-color: #3C6255;
     --paragraph-color: #000;
     --horizontal-row: #000;
-    --scrollbar: #3C6255;
+    --scrollbar: #ACFEC8;
 }
 
 .dark-mode:root {
@@ -32,8 +32,14 @@ body::-webkit-scrollbar {
     width: 4px;
 }
 
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
 body::-webkit-scrollbar-thumb {
+    transition: 1s;
     background-color: var(--scrollbar);
+    opacity: 0.4;
     border-radius: 360px;
 }
 
@@ -282,6 +288,10 @@ article {
 }
 
 #reuse-div {
+    display: none;
+}
+
+#rethink-div {
     display: none;
 }
 
