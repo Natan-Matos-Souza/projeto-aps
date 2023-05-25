@@ -8,7 +8,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     transition: 1s;
-    background-color: var(--scrollbar);
+    background-color: var(--scrollbar) !important;
     opacity: 0.4;
     border-radius: 360px;
 }

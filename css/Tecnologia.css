@@ -12,6 +12,7 @@
    --secondary-color: #3c6255;
    --tertiary-color: #61876e;
    --horizontal-row: #000;
+   --scrollbar: #ACFEC8;
  }
  
  .dark-mode:root {
@@ -19,6 +20,7 @@
    --secondary-color: #ACFEC8;
    --tertiary-color: #fff;
    --horizontal-row: #fff;
+   --scrollbar: #ACFEC8;
  }
  
 
